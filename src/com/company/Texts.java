@@ -2,7 +2,7 @@ package com.company;
 
 public class Texts {
     public static final String[] texts;
-    public static final int amountOfTexts = 15;
+    public static final int amountOfTexts = 11;
     static {
         texts = new String[amountOfTexts];
         texts[0] = "Вы очутились в какой-то тёмной комнате, хорошо, что " +
