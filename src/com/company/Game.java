@@ -25,6 +25,9 @@ public class Game {
                 continue;
             }
             if (story.isEnd() || hero.health <= 0) {
+                if (story.current_situation.text.equals(Texts.texts[11])) {
+                    System.out.println("Вы выбрались из подземелья, заработав при этом " + hero.money + " монет!\n\n\n");
+                }
                 System.out.println("====================the end!===================");
                 return;
             }
@@ -32,6 +35,11 @@ public class Game {
         }
 
     }
+
+    public static int getMoney() {
+        return hero.money;
+    }
+
     public static void battle() {
         Scanner in = new Scanner(System.in);
         Monsters monster = new Monsters(story.current_situation.isBattle);

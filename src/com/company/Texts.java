@@ -2,7 +2,7 @@ package com.company;
 
 public class Texts {
     public static final String[] texts;
-    public static final int amountOfTexts = 11;
+    public static final int amountOfTexts = 12;
     static {
         texts = new String[amountOfTexts];
         texts[0] = "Вы очутились в какой-то тёмной комнате, хорошо, что " +
@@ -39,8 +39,6 @@ public class Texts {
                 "(1) Взять деньги (20 монет) и пойти дальше";
         texts[10] = "Вы идете дальше... И натыкаетесь на огромного монстра!!!";
         texts[11] = "Вы победили этого ужасного монстра! У него на шее висел ключ, которым вы легко открыли \n" +
-                "следующую дверь. Однако за ней нет никаких монстров, вы видите солнечный свет!\n" +
-                "Вы выбрались из подземелья, заработав при этом " + Game.hero.money +
-                " монет!\n\n\n";
+                "следующую дверь. Однако за ней нет никаких монстров, вы видите солнечный свет!";
     }
 }
